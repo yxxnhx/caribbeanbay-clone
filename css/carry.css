@@ -1,0 +1,978 @@
+.inner {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    background-color: #f6f6f6;
+    height: 41px;
+    border-bottom: 1px solid #c0c0c0;
+
+}
+.header-top .inner {
+    display: flex;
+    height: 41px;
+}
+
+.header-top .inner .header-top-gnb {
+    display: flex;
+}
+
+.header-top .inner h1 {
+    padding: 3px 43px;
+
+}
+
+.header-top .inner .header-top-gnb li {
+    font-size: 16px;
+    color: #666;
+    padding: 3px 43px;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #c0c0c0;
+}
+
+
+
+.header-top .inner .lang-area {
+    border-left: 1px solid #c0c0c0;
+    padding: 3px 50px;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+
+}
+
+.header-top .inner .lang-area::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../cari-img/bull_earth.gif) no-repeat;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.header-top .inner .lang-area::after {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 10px;
+    background: url(../cari-img/btn_more_down.gif) no-repeat;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.header-top .inner .lang-area .lang-dep1 {
+    position: relative;
+}
+
+.header-top .inner .lang-area .lang-dep1 li:hover>.lang-dep2 {
+    display: block;
+}
+
+.header-top .inner .lang-area .lang-dep1 .lang-dep2 {
+    position: absolute;
+    top: 39px;
+    left: -29px;
+    display: none;
+}
+
+.lang-dep2 li {
+    background-color: #f6f6f6;
+    border: 1px solid #c0c0c0;
+    letter-spacing: -0.5px;
+    width: 130px;
+}
+
+.header-top .inner .reserve {
+    display: flex;
+}
+
+.header-top .inner .reserve li{
+    padding: 3px 18px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.header-top .inner .reserve li:nth-child(1) {
+    background-color: #ff7f02;
+}
+
+.header-top .inner .reserve li:nth-child(2) {
+    background-color: #2dbdca;
+}
+
+.header-top .inner .reserve li:nth-child(3) {
+    background-color: #892fd5;
+}
+
+.header-middle .inner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-middle .logo {
+    display: block;
+    font-size: 0;
+    background: url(../cari-img/logo_02cb.gif);
+    width: 162px;
+    height: 50px;
+    text-align: center;
+    margin-right: 300px;
+}
+
+.header-middle .inner .utill {
+    display: flex;
+    margin-right: 45px;
+}
+
+.header-middle .inner .utill li {
+    font-size: 14px;
+    color: #333;
+    padding: 21px 10px;
+    position: relative;
+}
+
+.header-middle .inner .utill li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #c0c0c0;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.header-middle .inner .utill li:nth-child(1):after {
+    display: none;
+}
+
+.header-bottom {
+    border-top: 2px solid #16A5FF;
+    border-bottom: 2px solid #e0e0e0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.header-bottom:hover {
+    height: 238px;
+}
+
+.header-bottom .inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-bottom .inner .dep1 {
+    width: 250px;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-bottom .inner .dep1 li a {
+    display: block;
+    width: 290px;
+    height: 50px;
+    line-height: 50px;    
+}
+
+.header-bottom .inner .dep1>li>a:hover {
+    font-size: 20px;
+    text-align: center;
+    background-color: #16A5FF;
+    color: #fff;
+}
+
+.header-bottom .inner .dep1 .dep2>li>a:hover {
+    color: #16A5FF;
+    text-decoration: underline;
+}
+
+.header-bottom .inner .dep1 .dep2 {
+    margin-top: 3px;
+    border-left: 1px solid #999;
+    width: 290px;
+    height: 170px;
+    padding-top: 5px;
+}
+
+.header-bottom .inner .dep1 .dep2.last {
+    border-right: 1px solid #999;
+    position: relative;
+
+}
+
+.header-bottom .inner .dep1 .dep2.last::after{
+    content: "";
+    display: block;
+    background: url(../cari-img/btn_guide_app.jpg);
+    width: 127px;
+    height: 83px;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+.header-bottom .inner .dep1 .dep2 li a {
+    height: 20px;
+    padding: 5px 0;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #999;
+}
+
+.main-banner {
+    background: url(../cari-img/bg\(1\).jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 570px;
+    margin-top: 151px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-banner .slide {
+    display: flex;
+    margin-top: 470px;
+}
+
+.main-banner .slide .circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-left: 5px;
+}
+
+.main-banner .main-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.promo-area {
+    background-color: #f0f0f0;
+    height: 537px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.promo-area .inner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo-area .promo-area-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.promo-area .promo-area-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.promo-list {
+    background-color: #fff;
+    width: 998px;
+    height: 228px;
+    border: 1px solid #c0c0c0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promo-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.promo-box::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 180px;
+    background-color: #d0d0d0;
+    position: absolute;
+    right: -50px;
+    top: 25px;
+}
+
+.promo-box.child::after {
+    display: none;
+}
+
+.promo-box .promo-box-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.promo-box .promo-box-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.promo-box .promo-box-price {
+    font-size: 15px;
+}
+
+.promo-btn {
+    width: 250px;
+    height: 45px;
+    padding-right: 20px;
+    border: 1px solid #16A5FF;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.15);
+}
+
+.promo-btn span {
+    font-weight: bold;
+}
+
+.promo-btn::after {
+    content: "";
+    display: block;
+    background: url(../cari-img/btn_arr_black.png);
+    width: 18px;
+    height: 9px;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+
+.info-area {
+    height: 747px;
+}
+
+.info-area .inner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-area  .info-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.info-area  .info-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.info-list {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+.info-box {
+    width: 325px;
+    height: 500px;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    border-top: 3px solid #134ef6;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-area  .info-box-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.info-area  .info-box-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.info-box-txt li a {
+    width: 250px;
+    height: 47px;
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 15px;
+    line-height: 47px;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-overflow : ellipsis;
+}
+
+.info-box.news{
+    position: relative;
+}
+
+.info-box.news::after {
+    content: "";
+    display: block;
+    width: 323px;
+    height: 112px;
+    background: url(../cari-img/banner_water_quality.jpg);
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+}
+
+
+.info-box.news .info-box-txt li:first-child {
+    border-top: 1px solid #333;
+}
+.info-box.news .info-box-txt li:last-child {
+    border-bottom: 1px solid #333;
+}
+
+.info-box-txt .info-box-date {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.info-box-txt .info-box-locate {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.info-box-txt .info-box-locate span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
+    font-weight: bold;
+    color: #134ef6;
+    margin-left: 10px;
+
+}
+
+.info-box-txt .info-box-notice {
+    text-align: center;
+    color: #134ef6;
+    margin-bottom: 30px;
+}
+
+.info-box-txt .info-box-notice-txt {
+    text-align: center;
+    line-height: 1.7;
+    position: relative;
+}
+
+.info-box-txt .info-box-notice-txt::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 1px;
+    background-color: #666;
+    position: absolute;
+    top: -10px;
+    left: 130px;
+}
+
+.info-btn {
+    width: 200px;
+    height: 38px;
+    font-size: 15px;
+    color: #134ef6;
+    border: 2px solid #134ef6;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.info-box.smart {
+    width: 325px;
+    height: 378px;
+    border: 1px solid #c0c0c0;
+}
+
+.info-box-topic {
+    width: 323px;
+    height: 129px;
+    background-color: #134ef6;
+    color: #fff;
+    position: relative;
+}
+
+
+.info-box.today .info-box-txt {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+
+}
+
+.info-box-topic::after {
+    content: "";
+    display: block;
+    width: 109px;
+    height: 148px;
+    background: url(../cari-img/bg_smart_reservation_ico.png);
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+
+.info-box-detail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-box-detail li {
+    display: block;
+    width: 162px;
+    height: 82px;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 82px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.info-box-detail li:nth-child(2n+1) {
+    border-right: 1px solid #e0e0e0;
+}
+
+.info-box-detail li:last-child {
+    border: none;
+}
+.info-box-detail li a {
+    margin-left: 10px;
+}
+
+.traffic-box {
+    width: 325px;
+    height: 115px;
+    border: 1px solid #c0c0c0;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.traffic-box img {
+    margin-right: 20px;
+}
+
+.traffic-box .traffic-txt:first-child {
+    font-size: 15px;
+}
+
+.traffic-box .traffic-txt span{
+    color: #6d2cb7;
+    font-weight: bold;
+}
+
+.editor-area {
+    height: 517px;
+    margin-bottom: 70px;
+}
+
+.editor-area .inner {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editor-area .inner .editor-topic {
+    width: 379px;
+    height: 38px;
+    background-color: #fff;
+    margin-bottom: 100px;
+}
+
+.editor-area .inner .editor-topic .editor-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    width: 379px;
+    height: 38px;
+    background-color: #fff;
+
+}
+
+.editor-area .inner .editor-topic .editor-title::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: -300px;
+    top: 80px;
+}
+
+.editor-area .inner .editor-topic .editor-title::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: 350px;
+    top: 80px;
+}
+
+.editor-area .inner .editor-topic .editor-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.editor-list {
+    width: 1020px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.editor-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.editor-box .editor-box-thumb {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.editor-box .editor-box-thumb img {
+    width: 215px;
+    height: 215px;
+    border-radius: 50%;
+}
+
+.editor-box .editor-box-thumb img:hover {
+    transform: scale(1.1);
+    transition: all 0.3 linear;
+
+}
+
+.editor-box a {
+    padding: 20px 0;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.editor-box a span{
+    font-size: 17px;
+}
+
+.editor-area .editor-btn {
+    width: 220px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 0 auto;
+    position: relative;
+    padding-right: 18px;
+}
+
+.editor-area .editor-btn::after {
+    content: "";
+    display: block;
+    background: url(../cari-img/btn_arr_black.png);
+    width: 18px;
+    height: 9px;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+}
+
+
+.editor-area .editor-btn span {
+    font-weight: bold;
+}
+
+.aside-area {
+    width: 100px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 300px;
+    right: 100px;
+    z-index: 2;
+}
+
+.aside-area .aside-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(221,227,242);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+    margin-bottom: 5px;
+
+}
+
+.aside-area .aside-box:first-child {
+    background-color: #134ef6;
+    color: #fff;
+}
+
+.aside-area .aside-box .aside-box-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-top {
+    background-color: #e9e9e9;
+    height: 45px;
+}
+
+.footer-top .sns-area .inner {
+    width: 1200px;
+}
+
+.sns-area .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sns-list {
+    display: flex;
+}
+
+.site-list {
+    display: flex;
+}
+
+.site-list .dep1 {
+    display: block;
+    padding-left: 20px;
+    width: 137px;
+    height: 28px;
+    line-height: 28px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid #c0c0c0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+    position: relative;
+}
+
+.site-list .dep1::after {
+    content: "";
+    display: block;
+    background: url(../cari-img/bt_up.gif);
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.site-list .resort li:hover>.resort-dep2 {
+    display: block;
+}
+
+.site-list .family li:hover>.family-dep2 {
+    display: block;
+}
+
+.site-list .dep2.resort-dep2 {
+    width: 137px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #c0c0c0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    left: -2px;
+    top: -86px;
+    display: none;
+}
+.site-list .dep2.family-dep2 {
+    width: 137px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border: 1px solid #c0c0c0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #666;
+    position: absolute;
+    left: -2px;
+    top: -114px;
+    display: none;
+}
+
+.footer-bottom {
+    background-color: #444b55;
+    height: 150px;
+    font-size: 14px;
+    color: #8e8e8e;
+    padding: 20px 0;
+}
+
+.footer-bottom .inner {
+    position: relative;
+}
+
+.footer-bottom-legal {
+    padding-bottom: 15px;
+}
+
+.footer-bottom-legal a {
+    padding-right: 20px;
+    position: relative;
+}
+
+.footer-bottom-legal a::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #8e8e8e;
+    position: absolute;
+    top: 2px;
+    right: 9px;
+}
+
+.footer-bottom-legal a:last-child::after {
+    display: block;
+}
+
+.footer-bottom-legal .bold {
+    font-weight: bold;
+    color: #d1d1d1;
+}
+
+.footer-bottom-info {
+    line-height: 1.5;
+}
+
+.footer-bottom-info .check {
+    padding-left: 15px;
+    position: relative;
+}
+
+.footer-bottom-info .check::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #8e8e8e;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+.footer-bottom-info .bold {
+    font-weight: bold;
+    color: #d1d1d1;
+    padding-right: 15px;
+}
+
+.footer-bottom-info .bold.last {
+    position: relative;
+
+}
+
+.footer-bottom-info .bold.last::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #8e8e8e;
+    position: absolute;
+    top: 2px;
+    left: -8px;
+}
+
+.footer-card {
+    background-color: #fff;
+    width: 75px;
+    height: 73px;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 100px;
+
+}
